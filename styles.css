@@ -1,0 +1,180 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(176,180,184, 0.1);
+    min-width: 488px;
+  
+  }
+  /*NAVBAR CSS*/
+    
+  .leiahopf{
+    margin-top: 1vh;
+    margin-left: 10vw;
+  }
+  .navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+    z-index: 9999;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 488px;
+    } 
+  
+  .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;  
+  }
+    
+   .nav-list a {
+    text-decoration: none;
+    color: #feda4a;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+  }
+  
+  .nav-list a:hover {
+    font-size: 1rem;
+  }
+  
+  li {
+    padding: 8px;
+  }
+  
+  
+  /*WELCOME SECTION CSS*/
+  
+  .welcome-section {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    perspective: 400px;
+    text-align: center;
+    color: #feda4a;
+    width: 100%;
+    height: 100vh;
+  }
+  .crawl {
+    position: relative;
+    top: 40%;
+    transform-origin: 50%;
+    transform: rotateX(20deg)  translateZ(0);
+    animation: crawl 2s linear;
+  }
+  
+  @keyframes crawl {
+    100% {
+      top: 40%;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    0% {
+      top: 60%;
+      transform: rotateX(25deg) translateZ(-25px);
+    }} 
+    /*WELCOME SECTION CSS END*/
+  
+  /*PROJECTS SECTION CSS*/
+  .projects{
+   font-family: 'Oswald', sans-serif;
+   height: 90vh;
+   text-align: center; 
+  }
+  
+  .projects-grid {
+    padding-top: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 630px;
+                }
+  
+  .project-tile {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 160px;
+  }
+  .project-image {
+    width: 100%;
+    border: 1px solid rgba(50, 50, 50, 0.5);
+    box-shadow: 10px 10px 5px rgba(50, 50, 50, 0.5);
+  }
+  
+  .grid-link {
+    text-decoration: none;
+    color: black;
+  }
+  /*PROJECTS SECTION END CSS*/
+   
+  
+  /*CONTACTS SECTION CSS*/
+  
+  .contacts-section{
+    height: 40vh;
+    background-color: #feda4a;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+  }
+  
+  .contact-links a{
+   text-decoration: none;
+   color: black;
+   font-size: 1.8rem;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .contact-links a:hover {
+    font-size: 2.3rem;
+  }
+  
+  .contacts {
+    position: relative;
+    top: 100px;
+    padding-left: 35vw;
+    padding-right: 35vw;
+  }
+  /*CONTACTS SECTION CSS END*/
+  
+  /*FOOTER CSS*/
+  
+  footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: #feda4a;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+  }
+  #copyright {
+    margin-right: 10vw;
+  }
+  
+  /*MEDIA QUERIES*/
+  
+  @media only screen and (max-width: 525px) {
+    /* For mobile phones: */
+      .project-tile {
+    width: 120px;
+    }
+}   
